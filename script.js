@@ -103,48 +103,48 @@ _defineProperty(SetCSSVariables, "PropTypes", { cssVariables: PropTypes.object.i
 
 function SlideAside(props) {
   const activeCar = props.activeCar;
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "tesla-slide-aside" }, /*#__PURE__*/
-    React.createElement("h1", { className: "tesla-slide-aside__wholename" }, /*#__PURE__*/
-    React.createElement("span", null, "Tesla"), /*#__PURE__*/
-    React.createElement(TransitionGroup, { component: "span", className: "tesla-slide-aside__name" }, /*#__PURE__*/
+  return (
+    React.createElement("div", { className: "tesla-slide-aside" }, 
+    React.createElement("h1", { className: "tesla-slide-aside__wholename" }, 
+    React.createElement("span", null, "Tesla"), 
+    React.createElement(TransitionGroup, { component: "span", className: "tesla-slide-aside__name" }, 
     React.createElement(CSSTransition, {
       key: activeCar.name,
       timeout: { enter: 800, exit: 1000 },
       className: "tesla-slide-aside__name-part",
       classNames: "tesla-slide-aside__name-part-",
       mountOnEnter: true,
-      unmountOnExit: true }, /*#__PURE__*/
+      unmountOnExit: true }, 
 
-    React.createElement("span", null, activeCar.name)))), /*#__PURE__*/
+    React.createElement("span", null, activeCar.name)))), 
 
 
 
-    React.createElement(TransitionGroup, { className: "tesla-slide-aside__desc" }, /*#__PURE__*/
+    React.createElement(TransitionGroup, { className: "tesla-slide-aside__desc" }, 
     React.createElement(CSSTransition, {
       key: activeCar.desc,
       timeout: { enter: 900, exit: 1200 },
       className: "tesla-slide-aside__desc-text",
       classNames: "tesla-slide-aside__desc-text-",
       mountOnEnter: true,
-      unmountOnExit: true }, /*#__PURE__*/
+      unmountOnExit: true }, 
 
-    React.createElement("p", null, activeCar.desc))), /*#__PURE__*/
+    React.createElement("p", null, activeCar.desc))), 
 
 
 
-    React.createElement("div", { className: "tesla-slide-aside__button" }, /*#__PURE__*/
-    React.createElement("button", { className: "button" }, "Reserve now"), /*#__PURE__*/
+    React.createElement("div", { className: "tesla-slide-aside__button" }, 
+    React.createElement("button", { className: "button" }, "Reserve now"), 
 
-    React.createElement(TransitionGroup, null, /*#__PURE__*/
+    React.createElement(TransitionGroup, null, 
     React.createElement(CSSTransition, {
       key: activeCar.color,
       timeout: { enter: 800, exit: 1000 },
       mountOnEnter: true,
       unmountOnExit: true,
-      classNames: "button__border-" }, /*#__PURE__*/
+      classNames: "button__border-" }, 
 
-    React.createElement(SetCSSVariables, { cssVariables: { '--btn-color': activeCar.color } }, /*#__PURE__*/
+    React.createElement(SetCSSVariables, { cssVariables: { '--btn-color': activeCar.color } }, 
     React.createElement("span", { className: "button__border" })))))));
 
 
