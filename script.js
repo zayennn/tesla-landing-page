@@ -391,24 +391,9 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
       animationForward: true,
       slidesCount: slides.length,
       animationState: null });_defineProperty(this, "slider",
-
-
     {
       header: '',
       content: '' });_defineProperty(this, "setAnimationState",
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     animationState => this.setState({ animationState }));_defineProperty(this, "setActiveSlide",
 
@@ -416,7 +401,6 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
       this.setState({
         activeSlide: slideId,
         animationForward: this.state.activeSlide < slideId ? true : false });
-
 
       this.setAnimationState(ANIMATION_PHASES.PENDING);
     });_defineProperty(this, "timeout",
@@ -428,7 +412,7 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
       headerHeight = this.slider.header.clientHeight;
 
       if (window.innerHeight < sliderHeight + headerHeight) {
-        return; // do not handle scroll effect when window height is smaller than slider plus header height
+        return;
       }
 
       e.preventDefault();
