@@ -207,13 +207,13 @@ class AnimValue extends React.Component {constructor(...args) {super(...args);_d
   }
 
   render() {
-    return /*#__PURE__*/React.createElement("span", { className: this.props.className, children: "0", ref: node => this.node = node });
+    return React.createElement("span", { className: this.props.className, children: "0", ref: node => this.node = node });
   }}_defineProperty(AnimValue, "defaultProps", { delay: 0, duration: 800, transformFn: value => Math.floor(value) });
 
 
 class AnimateValue extends React.Component {
   render() {
-    return /*#__PURE__*/(
+    return (
       React.createElement(AnimValue, {
         className: this.props.className,
         delay: this.props.delay,
@@ -249,23 +249,23 @@ class SlideParams extends React.Component {
   render() {
     const { activeCar } = this.props;
 
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "tesla-slide-params" }, /*#__PURE__*/
-      React.createElement("ul", { className: "tesla-slide-params__list" }, /*#__PURE__*/
-      React.createElement("li", { className: "tesla-slide-params__item" }, /*#__PURE__*/
-      React.createElement("div", { className: "tesla-slide-params__wrapper" }, /*#__PURE__*/
-      React.createElement("span", { className: "tesla-slide-params__prefix" }, "+"), /*#__PURE__*/
+    return (
+      React.createElement("div", { className: "tesla-slide-params" }, 
+      React.createElement("ul", { className: "tesla-slide-params__list" }, 
+      React.createElement("li", { className: "tesla-slide-params__item" }, 
+      React.createElement("div", { className: "tesla-slide-params__wrapper" }, 
+      React.createElement("span", { className: "tesla-slide-params__prefix" }, "+"), 
       React.createElement(AnimateValue, {
         className: "tesla-slide-params__value",
         value: activeCar.topSpeed,
-        delay: DELAY_TOP_SPEED }), /*#__PURE__*/
-      React.createElement("span", { className: "tesla-slide-params__sufix" }, "mph")), /*#__PURE__*/
+        delay: DELAY_TOP_SPEED }), 
+      React.createElement("span", { className: "tesla-slide-params__sufix" }, "mph")), 
 
 
-      React.createElement("p", { className: "tesla-slide-params__name" }, "Top speed")), /*#__PURE__*/
+      React.createElement("p", { className: "tesla-slide-params__name" }, "Top speed")), 
 
 
-      React.createElement("li", { className: "tesla-slide-params__item" }, /*#__PURE__*/
+      React.createElement("li", { className: "tesla-slide-params__item" }, 
       React.createElement("div", { className: "tesla-slide-params__wrapper" }, /*#__PURE__*/
       React.createElement(AnimateValue, {
         className: "tesla-slide-params__value",
