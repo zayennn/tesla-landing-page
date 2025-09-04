@@ -788,14 +788,6 @@ a {
   margin: 0 auto;
 }
 
-/* Slider Navigation
--------------------------------------------------------------- */
-.tesla-slider-navigation {
-  /* Slider Navigation List
-  -------------------------------------------------------------- */
-  /* Slider Navigation List item
-  -------------------------------------------------------------- */
-}
 @media only screen and (min-width:1200px) {
   .tesla-slider-navigation {
     order: 2;
