@@ -199,8 +199,6 @@ a {
   background: transparent;
 }
 
-/* Header
--------------------------------------------------------------- */
 .tesla-header {
   display: flex;
   justify-content: space-between;
