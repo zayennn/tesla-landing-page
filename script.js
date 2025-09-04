@@ -463,12 +463,12 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
 
 /* Header */
 function Header() {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "tesla-header" }, /*#__PURE__*/
-    React.createElement("div", { className: "tesla-header__logo" }, /*#__PURE__*/
-    React.createElement("img", { src: logoTesla, alt: "" })), /*#__PURE__*/
+  return (
+    React.createElement("div", { className: "tesla-header" }, 
+    React.createElement("div", { className: "tesla-header__logo" }, 
+    React.createElement("img", { src: logoTesla, alt: "" })), 
 
-    React.createElement("div", { className: "tesla-header__nav" }, /*#__PURE__*/
+    React.createElement("div", { className: "tesla-header__nav" }, 
     React.createElement("img", { src: hamburger, alt: "" }))));
 
 
