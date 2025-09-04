@@ -225,15 +225,11 @@ a {
   width: auto;
 }
 
-/* Slide Item
--------------------------------------------------------------- */
 .tesla-slide {
   position: relative;
   margin-top: 50px;
   width: 100%;
   order: 1;
-  /* Slide Item Img
-  -------------------------------------------------------------- */
 }
 @media only screen and (min-width:768px) {
   .tesla-slide {
