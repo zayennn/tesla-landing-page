@@ -459,14 +459,9 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
       React.createElement("div", { className: "tesla-slider__scroll" }, 
       React.createElement("img", { src: mouseImg, alt: "" }))));
 
-
-
   }}
 
-
-
-/* Header
-    -------------------------------------------------------------- */
+/* Header */
 function Header() {
   return /*#__PURE__*/(
     React.createElement("div", { className: "tesla-header" }, /*#__PURE__*/
