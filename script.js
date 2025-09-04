@@ -266,23 +266,23 @@ class SlideParams extends React.Component {
 
 
       React.createElement("li", { className: "tesla-slide-params__item" }, 
-      React.createElement("div", { className: "tesla-slide-params__wrapper" }, /*#__PURE__*/
+      React.createElement("div", { className: "tesla-slide-params__wrapper" },
       React.createElement(AnimateValue, {
         className: "tesla-slide-params__value",
         value: activeCar.mph,
-        delay: DELAY_MPH }), /*#__PURE__*/
-      React.createElement("span", { className: "tesla-slide-params__sufix" }, "s")), /*#__PURE__*/
+        delay: DELAY_MPH }),
+      React.createElement("span", { className: "tesla-slide-params__sufix" }, "s")),
 
-      React.createElement("p", { className: "tesla-slide-params__name" }, "0-60 mph")), /*#__PURE__*/
+      React.createElement("p", { className: "tesla-slide-params__name" }, "0-60 mph")),
 
 
-      React.createElement("li", { className: "tesla-slide-params__item" }, /*#__PURE__*/
-      React.createElement("div", { className: "tesla-slide-params__wrapper" }, /*#__PURE__*/
+      React.createElement("li", { className: "tesla-slide-params__item" },
+      React.createElement("div", { className: "tesla-slide-params__wrapper" },
       React.createElement(AnimateValue, {
         className: "tesla-slide-params__value",
         value: activeCar.mileRange,
-        delay: DELAY_MILE_RANG }), /*#__PURE__*/
-      React.createElement("span", { className: "tesla-slide-params__sufix" }, "mi")), /*#__PURE__*/
+        delay: DELAY_MILE_RANG }),
+      React.createElement("span", { className: "tesla-slide-params__sufix" }, "mi")),
 
       React.createElement("p", { className: "tesla-slide-params__name" }, "Mile Range")))));
 
