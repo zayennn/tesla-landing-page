@@ -347,16 +347,12 @@ class Slide extends React.Component {constructor(...args) {super(...args);_defin
 
 class SliderNavigation extends React.Component {
 
-
-
-
-
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "tesla-slider-navigation" }, /*#__PURE__*/
+    return (
+      React.createElement("div", { className: "tesla-slider-navigation" }, 
       React.createElement("ul", { className: "tesla-slider-navigation__list" },
-      this.props.carsNames.map((car) => /*#__PURE__*/
-      React.createElement("li", { key: car.id, className: "tesla-slider-navigation__item" }, /*#__PURE__*/
+      this.props.carsNames.map((car) => 
+      React.createElement("li", { key: car.id, className: "tesla-slider-navigation__item" }, 
       React.createElement("a", {
         href: "#",
         onClick: event => {
