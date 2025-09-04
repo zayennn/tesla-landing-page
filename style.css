@@ -754,12 +754,8 @@ a {
   font-size: initial;
 }
 
-/* Slider
--------------------------------------------------------------- */
 .tesla-slider {
   padding-top: 20px;
-  /* Mouse scroll
-  -------------------------------------------------------------- */
 }
 @media only screen and (min-width:992px) {
   .tesla-slider {
