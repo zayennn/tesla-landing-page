@@ -300,45 +300,45 @@ class Slide extends React.Component {constructor(...args) {super(...args);_defin
   render() {
     const { activeSlide, animationForward } = this.props;
 
-    return /*#__PURE__*/(
-      React.createElement("div", { className: `tesla-slide ${animationForward ? 'animation-forward' : 'animation-back'}` }, /*#__PURE__*/
-      React.createElement(SlideAside, { activeCar: activeSlide }), /*#__PURE__*/
+    return(
+      React.createElement("div", { className: `tesla-slide ${animationForward ? 'animation-forward' : 'animation-back'}` },
+      React.createElement(SlideAside, { activeCar: activeSlide }),
 
-      React.createElement(TransitionGroup, null, /*#__PURE__*/
+      React.createElement(TransitionGroup, null,
       React.createElement(CSSTransition, {
         key: activeSlide.name,
         timeout: { enter: 800, exit: 1000 },
         classNames: "tesla-slide__bckg-",
         mountOnEnter: true,
-        unmountOnExit: true }, /*#__PURE__*/
+        unmountOnExit: true },
 
       React.createElement(SetCSSVariables, {
         cssVariables: {
           '--car-color': activeSlide.color,
           '--bckg-height': activeSlide.bckgHeight + 'px',
           '--shadow-opacity': activeSlide.shadowOpacity,
-          '--car-shadow-height': activeSlide.carShadowHeight + 'px' } }, /*#__PURE__*/
+          '--car-shadow-height': activeSlide.carShadowHeight + 'px' } },
 
 
-      React.createElement("div", { className: "tesla-slide__bckg" }, /*#__PURE__*/
-      React.createElement("div", { className: "tesla-slide__bckg-fill" }))))), /*#__PURE__*/
+      React.createElement("div", { className: "tesla-slide__bckg" },
+      React.createElement("div", { className: "tesla-slide__bckg-fill" }))))),
 
 
 
 
 
-      React.createElement(TransitionGroup, null, /*#__PURE__*/
+      React.createElement(TransitionGroup, null,
       React.createElement(CSSTransition, {
         key: activeSlide.name,
         timeout: { enter: 700, exit: 1200 },
         classNames: "tesla-slide__img-",
         mountOnEnter: true,
         unmountOnExit: true,
-        onEntered: this.handleEnter }, /*#__PURE__*/
+        onEntered: this.handleEnter },
 
-      React.createElement("div", { className: "tesla-slide__img" }, /*#__PURE__*/
-      React.createElement("img", { className: "tesla-slide__img-floor", src: activeSlide.imgFloorUrl, alt: "" }), /*#__PURE__*/
-      React.createElement("img", { className: "tesla-slide__img-car", src: activeSlide.imgUrl, alt: "" })))), /*#__PURE__*/
+      React.createElement("div", { className: "tesla-slide__img" },
+      React.createElement("img", { className: "tesla-slide__img-floor", src: activeSlide.imgFloorUrl, alt: "" }),
+      React.createElement("img", { className: "tesla-slide__img-car", src: activeSlide.imgUrl, alt: "" })))),
 
 
 
