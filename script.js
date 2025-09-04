@@ -471,21 +471,16 @@ function Header() {
     React.createElement("div", { className: "tesla-header__nav" }, 
     React.createElement("img", { src: hamburger, alt: "" }))));
 
-
-
 }
 
-/* App
-    -------------------------------------------------------------- */
+/* App */
 class App extends React.Component {
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "container" }, /*#__PURE__*/
-      React.createElement(Header, null), /*#__PURE__*/
+    return (
+      React.createElement("div", { className: "container" }, 
+      React.createElement(Header, null), 
       React.createElement(Slider, null)));
-
 
   }}
 
-
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById("root"));
+ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
