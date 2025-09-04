@@ -172,31 +172,8 @@ const myEasing = BezierEasing(.4, -0.7, .1, 1.5);
 
 class AnimValue extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "node",
 
-
-
-
-
-
     null);_defineProperty(this, "timeout",
     null);_defineProperty(this, "setValue",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     (value, step) => {
       if (!this.node) {
