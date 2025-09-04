@@ -367,13 +367,7 @@ class SliderNavigation extends React.Component {
         style: {
           color: this.props.carsNames[this.props.activeSlide] === car ? car.color : '' } },
 
-
       car.name))))));
-
-
-
-
-
 
   }}_defineProperty(SliderNavigation, "PropTypes", { setActiveSlide: PropTypes.func.isRequired, carsNames: PropTypes.array.isRequired });
 
@@ -384,8 +378,7 @@ mouseImg = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1780138/mouse.svg',
 hamburger = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1780138/hamburger.svg';
 
 
-/* Slider
-    -------------------------------------------------------------- */
+/* Slider */
 
 const ANIMATION_PHASES = {
   PENDING: 'PENDING',
