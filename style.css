@@ -234,8 +234,6 @@ a {
   order: 1;
   /* Slide Item Img
   -------------------------------------------------------------- */
-  /* Slide Item Img
-  -------------------------------------------------------------- */
 }
 @media only screen and (min-width:768px) {
   .tesla-slide {
@@ -521,8 +519,6 @@ a {
   transform: translateY(-20px) scale(1.1);
 }
 
-/* Slide Item Aside
--------------------------------------------------------------- */
 .tesla-slide-aside {
   text-align: left;
 }
