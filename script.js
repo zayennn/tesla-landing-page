@@ -436,15 +436,15 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
   }
 
   render() {
-    return /*#__PURE__*/(
-      React.createElement("div", { className: "tesla-slider" }, /*#__PURE__*/
+    return (
+      React.createElement("div", { className: "tesla-slider" }, 
       React.createElement(SliderNavigation, {
         activeSlide: this.state.activeSlide,
         setActiveSlide: this.setActiveSlide,
         carsNames: slides.map(slide => ({
           id: slide.id,
           name: slide.name,
-          color: slide.color })) }), /*#__PURE__*/
+          color: slide.color })) }), 
 
 
 
@@ -453,10 +453,10 @@ class Slider extends React.Component {constructor(...args) {super(...args);_defi
         activeSlide: slides[this.state.activeSlide],
         animationState: this.state.animationState,
         setAnimationState: this.setAnimationState,
-        ANIMATION_PHASES: ANIMATION_PHASES }), /*#__PURE__*/
+        ANIMATION_PHASES: ANIMATION_PHASES }), 
 
 
-      React.createElement("div", { className: "tesla-slider__scroll" }, /*#__PURE__*/
+      React.createElement("div", { className: "tesla-slider__scroll" }, 
       React.createElement("img", { src: mouseImg, alt: "" }))));
 
 
