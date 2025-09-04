@@ -293,13 +293,6 @@ class SlideParams extends React.Component {
 
 
 class Slide extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "handleEnter",
-
-
-
-
-
-
-
     e => {
       this.props.setAnimationState(this.props.ANIMATION_PHASES.STOP);
     });}
