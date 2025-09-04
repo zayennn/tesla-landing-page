@@ -340,11 +340,7 @@ class Slide extends React.Component {constructor(...args) {super(...args);_defin
       React.createElement("img", { className: "tesla-slide__img-floor", src: activeSlide.imgFloorUrl, alt: "" }),
       React.createElement("img", { className: "tesla-slide__img-car", src: activeSlide.imgUrl, alt: "" })))),
 
-
-
-
       React.createElement(SlideParams, { activeCar: activeSlide, animationForward: animationForward })));
-
 
   }}_defineProperty(Slide, "PropTypes", { activeSlide: PropTypes.object.isRequired, animationForward: PropTypes.bool.isRequired, setAnimationState: PropTypes.func.isRequired, ANIMATION_PHASES: PropTypes.object.isRequired });
 
