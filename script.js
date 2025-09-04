@@ -97,7 +97,7 @@ class SetCSSVariables extends React.Component {
     return this.props.children;
   }}
 
-/* Slide aside -------------------------------------------------------------- */
+/* Slide aside */
 
 _defineProperty(SetCSSVariables, "PropTypes", { cssVariables: PropTypes.object.isRequired, className: PropTypes.string });
 
@@ -118,8 +118,6 @@ function SlideAside(props) {
 
     React.createElement("span", null, activeCar.name)))), 
 
-
-
     React.createElement(TransitionGroup, { className: "tesla-slide-aside__desc" }, 
     React.createElement(CSSTransition, {
       key: activeCar.desc,
@@ -130,8 +128,6 @@ function SlideAside(props) {
       unmountOnExit: true }, 
 
     React.createElement("p", null, activeCar.desc))), 
-
-
 
     React.createElement("div", { className: "tesla-slide-aside__button" }, 
     React.createElement("button", { className: "button" }, "Reserve now"), 
@@ -147,19 +143,12 @@ function SlideAside(props) {
     React.createElement(SetCSSVariables, { cssVariables: { '--btn-color': activeCar.color } }, 
     React.createElement("span", { className: "button__border" })))))));
 
-
-
-
-
-
 }
 
 SlideAside.PropTypes = {
   activeCar: PropTypes.object.isRequired };
 
-
-/* Slide animate values
-    -------------------------------------------------------------- */
+/* Slide animate values */
 
 function animate(render, duration, easing, next = () => null) {
   const start = Date.now();
