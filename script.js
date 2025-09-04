@@ -84,14 +84,8 @@ const slides = [
 
 
 
-/* Set CSS Variables
-  */
+/* Set CSS Variables */
 class SetCSSVariables extends React.Component {
-
-
-
-
-
 
   componentWillReceiveProps(props) {
     Object.keys(props.cssVariables).forEach(function (key) {
@@ -103,10 +97,9 @@ class SetCSSVariables extends React.Component {
     return this.props.children;
   }}
 
+/* Slide aside -------------------------------------------------------------- */
 
-
-/* Slide aside
-    -------------------------------------------------------------- */_defineProperty(SetCSSVariables, "PropTypes", { cssVariables: PropTypes.object.isRequired, className: PropTypes.string });
+_defineProperty(SetCSSVariables, "PropTypes", { cssVariables: PropTypes.object.isRequired, className: PropTypes.string });
 
 function SlideAside(props) {
   const activeCar = props.activeCar;
