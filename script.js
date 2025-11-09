@@ -385,8 +385,8 @@ class SliderNavigation extends React.Component {
                   this.props.setActiveSlide(this.props.carsNames.indexOf(car));
                 },
                 className: `tesla-slider-navigation__link ${this.props.carsNames[this.props.activeSlide] === car ?
-                    'tesla-slider-navigation__link--active' :
-                    ''
+                  'tesla-slider-navigation__link--active' :
+                  ''
                   }`,
                 style: {
                   color: this.props.carsNames[this.props.activeSlide] === car ? car.color : ''
